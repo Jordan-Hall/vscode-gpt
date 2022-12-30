@@ -12,7 +12,7 @@ export async function getGpt3Result(prompt: string, apiKey: string): Promise<str
 	const options = {
 		hostname: 'api.openai.com',
 		port: 443,
-		path: '/v1/images/generations',
+		path: 'v1/prompts',
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
