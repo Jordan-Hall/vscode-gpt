@@ -1,18 +1,50 @@
 # GPT-3 VS Code Plugin
-Welcome to the GPT-3 VS Code Plugin, a tool that allows you to use the power of OpenAI's GPT-3 language model directly within your code editor.
+
+A VS Code plugin that allows you to use OpenAI's GPT-3 to generate code for your projects.
 
 ## Features
- - Convert comments to code: Simply highlight a comment in your code and use the "Convert comments" command to generate code that matches the intent of the comment.
 
- - Convert unit tests to code: Select a block of unit test definitions and use the "Convert tests" command to generate code that matches the tests.
+- Convert comments to code
+- Convert unit tests to implementation
+- Execute GPT-3 on the current line
+- Execute GPT-3 on the full file
 
- - Execute GPT-3 on the current line: Use the "Execute on current line" command to generate code based on the current line of code you have selected.
+## Usage
 
-- Execute GPT-3 on the full file: Use the "Execute on full file" command to generate code based on the entire file you have open.
+To use the GPT-3 extension, follow these steps:
 
-## Getting Started
-To use the GPT-3 VS Code Plugin, you will need to obtain an API key from OpenAI. Once you have your key, you can set it within the plugin settings by using the "Set API Key" command.
+1. Make sure you have an OpenAI API key. You can obtain one by signing up for a free account on the [OpenAI website](https://beta.openai.com/signup/).
+2. In Visual Studio Code, go to the `Extensions` tab and search for `GPT-3`.
+3. Click the `Install` button to install the extension.
+4. Once the extension is installed, click the `Reload` button to activate it.
+5. In the `Command Palette` (Ctrl+Shift+P), search for `GPT-3: Set API Key` and enter your API key.
+6. To use the extension, open a file in Visual Studio Code and select the text you want to convert or execute.
+7. In the `Command Palette`, search for the command you want to use (e.g. `GPT-3: Convert Comments`, `GPT-3: Convert Tests`, etc.).
+8. Select the command and follow the prompts to generate the code or execute GPT-3.
 
-With your API key set, you can begin using the plugin by selecting a block of code or a comment, and then using one of the conversion commands listed above. The generated code will be added to a new file with a .gpt3.code extension, and opened in a new editor for you to review.
 
-We hope you find the GPT-3 VS Code Plugin useful in your coding endeavors. If you have any feedback or suggestions, please don't hesitate to let us know. Thank you for using the plugin!
+## Requirements
+
+- OpenAI API key
+
+## Extension Settings
+
+This extension contributes the following settings:
+
+- `gpt3.apiKey`: the API key for OpenAI's GPT-3
+
+## Troubleshooting
+
+If you encounter any issues while using the GPT-3 extension, try the following steps:
+
+1. Make sure you have entered a valid API key. You can check your API key by going to the `Command Palette` and searching for `GPT-3: Show API Key`.
+2. If you are trying to convert or execute code, make sure you have selected the text you want to convert or execute.
+3. If you are still having issues, try uninstalling and reinstalling the extension.
+4. If the problem persists, please [create an issue](https://github.com/your-username/gpt-3-vscode/issues) on the GitHub repository with a detailed description of the problem and any error messages you may have received.
+
+
+## Release Notes
+
+### 1.0.0
+
+Initial release of the GPT-3 VS Code plugin.
