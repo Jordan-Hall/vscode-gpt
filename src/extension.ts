@@ -19,6 +19,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// Request the user to input their GPT-3 API key
 	vscode.commands.registerCommand('gpt3.activate', async () => {
+
 		const apiKey = await vscode.window.showInputBox({
 			prompt: 'Enter your GPT-3 API key',
 			password: true,

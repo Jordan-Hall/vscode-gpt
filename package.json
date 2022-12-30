@@ -60,7 +60,15 @@
         "command": "gpt3.activate",
         "title": "Activate GPT-3"
       }
-    ]
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "gpt3",
+          "name": "GPT ai coder"
+        }
+      ]
+    }
   },
   "repository": {
     "type": "git",
