@@ -1,6 +1,7 @@
 {
-  "name": "gpt-3",
-  "displayName": "gpt-3",
+  "name": "ai-coder-gpt",
+  "publisher": "jordanHallUK",
+  "displayName": "AI Coder using GPT",
   "description": "Use GPT-3 to generate you code from Tests and comments",
   "version": "0.0.1",
   "engines": {
