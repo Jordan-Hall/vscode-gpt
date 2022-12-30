@@ -10,23 +10,56 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:gpt-3.helloWorld"
+    "onCommand:gpt3.executeLine",
+    "onCommand:gpt3.executeFile",
+    "onCommand:gpt3.convertComments",
+    "onCommand:gpt3.convertTests",
+    "onCommand:gpt3.activate"
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "contributes": {
-      "configuration": {
-        "type": "object",
-        "title": "My Extension Configuration",
+    "configuration": [
+      {
+        "title": "GPT-3 API Key",
         "properties": {
           "gpt3.apiKey": {
             "type": "string",
-            "default": "",
-            "description": "GPT-3 API key"
+            "description": "API key for the GPT-3 model",
+            "default": ""
           }
         }
       }
-    }
+    ],
+    "commands": [
+      {
+        "command": "gpt3.executeLine",
+        "title": "Execute GPT-3 on current line"
+      },
+      {
+        "command": "gpt3.executeFile",
+        "title": "Execute GPT-3 on full file"
+      },
+      {
+        "command": "gpt3.convertComments",
+        "title": "Convert comments to code"
+      },
+      {
+        "command": "gpt3.convertTests",
+        "title": "Convert unit tests to code"
+      },
+      {
+        "command": "gpt3.convertNew",
+        "title": "Convert to a new page"
+      },
+      {
+        "command": "gpt3.convertSame",
+        "title": "Convert on the same page"
+      },
+      {
+        "command": "gpt3.activate",
+        "title": "Activate GPT-3"
+      }
+    ]
   },
   "repository": {
     "type": "git",

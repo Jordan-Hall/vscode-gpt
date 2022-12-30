@@ -8,13 +8,12 @@ import { convertSame } from './commands/convertSame';
 import { convertTests } from './commands/convertTests';
 import { executeFile } from './commands/executeFile';
 import { executeLine } from './commands/executeLine';
-import { getApiKey, removeApiKey, setApiKey } from './functions/APIKey';
-import { getSignature } from './functions/getSignature';
-import { getTest } from './functions/getTests';
+import { removeApiKey, setApiKey } from './functions/APIKey';
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
+	vscode.window.showInformationMessage('Thank you for using the GPT-3 plugin!');
 	const treeDataProvider = new Gpt3TreeDataProvider();
 	vscode.window.registerTreeDataProvider('gpt3', treeDataProvider);
 
