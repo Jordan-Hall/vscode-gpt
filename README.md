@@ -1,71 +1,18 @@
-# gpt-3 README
-
-This is the README for your extension "gpt-3". After writing up a brief description, we recommend including the following sections.
+# GPT-3 VS Code Plugin
+Welcome to the GPT-3 VS Code Plugin, a tool that allows you to use the power of OpenAI's GPT-3 language model directly within your code editor.
 
 ## Features
+ - Convert comments to code: Simply highlight a comment in your code and use the "Convert comments" command to generate code that matches the intent of the comment.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+ - Convert unit tests to code: Select a block of unit test definitions and use the "Convert tests" command to generate code that matches the tests.
 
-For example if there is an image subfolder under your extension project workspace:
+ - Execute GPT-3 on the current line: Use the "Execute on current line" command to generate code based on the current line of code you have selected.
 
-\!\[feature X\]\(images/feature-x.png\)
+- Execute GPT-3 on the full file: Use the "Execute on full file" command to generate code based on the entire file you have open.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Getting Started
+To use the GPT-3 VS Code Plugin, you will need to obtain an API key from OpenAI. Once you have your key, you can set it within the plugin settings by using the "Set API Key" command.
 
-## Requirements
+With your API key set, you can begin using the plugin by selecting a block of code or a comment, and then using one of the conversion commands listed above. The generated code will be added to a new file with a .gpt3.code extension, and opened in a new editor for you to review.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+We hope you find the GPT-3 VS Code Plugin useful in your coding endeavors. If you have any feedback or suggestions, please don't hesitate to let us know. Thank you for using the plugin!
