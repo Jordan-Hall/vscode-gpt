@@ -1,0 +1,1 @@
+// create a new section to a vs code plugin add a new view for the plugin to enter the api key and save it in the config file easier

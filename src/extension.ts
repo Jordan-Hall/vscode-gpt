@@ -16,7 +16,6 @@ export function activate(context: vscode.ExtensionContext) {
 	vscode.window.showInformationMessage('Thank you for using the GPT-3 plugin!');
 	const treeDataProvider = new Gpt3TreeDataProvider();
 	vscode.window.registerTreeDataProvider('gpt3', treeDataProvider);
-
 	// Request the user to input their GPT-3 API key
 	vscode.commands.registerCommand('gpt3.activate', async () => {
 
