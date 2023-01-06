@@ -3,7 +3,7 @@
   "publisher": "jordanHallUK",
   "displayName": "AI Coder using GPT",
   "description": "Use GPT-3 to generate you code from Tests and comments",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -59,6 +59,14 @@
       {
         "command": "gpt3.activate",
         "title": "Activate GPT-3"
+      },
+      {
+        "command": "gpt3.generateDocumentation",
+        "title": "generate documentation from file"
+      },
+      {
+        "command": "gpt3.generateTests",
+        "title": "generate tests from file"
       }
     ],
     "views": {

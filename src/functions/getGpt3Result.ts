@@ -23,7 +23,7 @@ export async function getGpt3Result(prompt: string, apiKey: string): Promise<str
 	} catch (e) {
 		debugger;
 		console.error(e);
-		return 'Error';
+		return null;
 	}
 
 }

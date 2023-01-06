@@ -8,6 +8,8 @@ import { convertSame } from './commands/convertSame';
 import { convertTests } from './commands/convertTests';
 import { executeFile } from './commands/executeFile';
 import { executeLine } from './commands/executeLine';
+import { generateDocumentation } from './commands/generateDocumentation';
+import { generateTests } from './commands/generateTests';
 import { removeApiKey, setApiKey } from './functions/APIKey';
 
 // This method is called when your extension is activated
@@ -35,6 +37,8 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(convertSame());
 	context.subscriptions.push(executeFile());
 	context.subscriptions.push(executeLine());
+	context.subscriptions.push(generateDocumentation());
+	context.subscriptions.push(generateTests());
 }
 
 // This method is called when your extension is deactivated

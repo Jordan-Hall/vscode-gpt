@@ -54,6 +54,22 @@ export class Gpt3TreeDataProvider implements vscode.TreeDataProvider<Gpt3Node> {
 						title: 'Convert unit tests to code'
 					}
 				),
+				new Gpt3Node(
+					'Generate documentation from file',
+					'documentation',
+					{
+						command: 'gpt3.generateDocumentation',
+						title: 'Convert file to markdown documentation'
+					}
+				),
+				new Gpt3Node(
+					'Generate Tests from file',
+					'test',
+					{
+						command: 'gpt3.generateTests',
+						title: 'Convert code file to Tests'
+					}
+				),
 			]);
 		} else {
 			return Promise.resolve([]);
